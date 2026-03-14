@@ -1,0 +1,871 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>IRONFORGE GYM — Forge Your Legend</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Oswald:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- =========================================================
+       HEADER
+  ========================================================= -->
+  <header class="header" id="header">
+    <div class="container header__inner">
+      <a href="#home" class="logo">
+        <span class="logo__icon"><i class="fas fa-dumbbell"></i></span>
+        <span class="logo__text">IRON<span class="accent">FORGE</span></span>
+      </a>
+
+      <nav class="nav" id="nav">
+        <ul class="nav__list">
+          <li><a href="#home"      class="nav__link active">Home</a></li>
+          <li><a href="#about"     class="nav__link">About</a></li>
+          <li><a href="#programs"  class="nav__link">Programs</a></li>
+          <li><a href="#trainers"  class="nav__link">Trainers</a></li>
+          <li><a href="#pricing"   class="nav__link">Pricing</a></li>
+          <li><a href="#gallery"   class="nav__link">Gallery</a></li>
+          <li><a href="#contact"   class="nav__link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <a href="#pricing" class="btn btn--primary header__cta">Join Now</a>
+
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- =========================================================
+       HERO — Split screen modern design
+  ========================================================= -->
+  <section class="hero" id="home">
+
+    <!-- Decorative background elements -->
+    <div class="hero__glow hero__glow--1"></div>
+    <div class="hero__glow hero__glow--2"></div>
+    <div class="hero__grid-bg"></div>
+    <div class="hero__big-text" aria-hidden="true">IRON</div>
+
+    <div class="container hero__split">
+
+      <!-- ── LEFT: Text content ── -->
+      <div class="hero__left">
+
+        <div class="hero__pill">
+          <span class="hero__pill-dot"></span>
+          Elite Fitness · Since 2010
+        </div>
+
+        <h1 class="hero__title">
+          <span class="hero__title-sm">PUSH</span>
+          <span class="hero__title-xl">BEYOND</span>
+          <span class="hero__title-word-row">
+            YOUR&nbsp;<span class="hero__words" id="heroWords">
+              <span class="hero__word active">LIMITS</span>
+              <span class="hero__word">GOALS</span>
+              <span class="hero__word">FEARS</span>
+              <span class="hero__word">BEST</span>
+            </span>
+          </span>
+        </h1>
+
+        <p class="hero__desc">
+          World-class coaching, premium equipment, and a community that refuses to quit. Your strongest self is waiting.
+        </p>
+
+        <div class="hero__actions">
+          <a href="#pricing" class="btn btn--primary btn--lg">
+            Start Training <i class="fas fa-arrow-right"></i>
+          </a>
+          <a href="#about" class="hero__play">
+            <span class="hero__play-ring">
+              <i class="fas fa-play"></i>
+            </span>
+            <span class="hero__play-label">
+              <small>Watch</small>
+              Our Story
+            </span>
+          </a>
+        </div>
+
+        <div class="hero__stats-row">
+          <div class="hero__stat">
+            <span class="hero__stat-number" data-target="4200">0</span><span class="hero__stat-suffix accent">+</span>
+            <span class="hero__stat-label">Members</span>
+          </div>
+          <div class="hero__stat-sep"></div>
+          <div class="hero__stat">
+            <span class="hero__stat-number" data-target="30">0</span><span class="hero__stat-suffix accent">+</span>
+            <span class="hero__stat-label">Coaches</span>
+          </div>
+          <div class="hero__stat-sep"></div>
+          <div class="hero__stat">
+            <span class="hero__stat-number" data-target="15">0</span><span class="hero__stat-suffix accent">yrs</span>
+            <span class="hero__stat-label">Experience</span>
+          </div>
+          <div class="hero__stat-sep"></div>
+          <div class="hero__stat">
+            <span class="hero__stat-number" data-target="98">0</span><span class="hero__stat-suffix accent">%</span>
+            <span class="hero__stat-label">Success Rate</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- ── RIGHT: Visual ── -->
+      <div class="hero__right">
+
+        <!-- Geometric shapes -->
+        <div class="hero__shape hero__shape--ring"></div>
+        <div class="hero__shape hero__shape--dot-grid" aria-hidden="true"></div>
+        <div class="hero__shape hero__shape--bar"></div>
+
+        <!-- Main image frame -->
+        <div class="hero__frame">
+          <div class="hero__frame-inner">
+            <img src="spor salonu home.jpg" alt="IronForge Gym Interior" loading="eager" />
+          </div>
+          <div class="hero__frame-cut"></div>
+        </div>
+
+        <!-- Floating card: Today's WOD -->
+        <div class="hero__card hero__card--wod">
+          <div class="hero__card-icon"><i class="fas fa-fire"></i></div>
+          <div class="hero__card-info">
+            <strong>Today's WOD</strong>
+            <span>50 Squats · 5K Run · Iron Plank</span>
+          </div>
+        </div>
+
+        <!-- Floating card: Award -->
+        <div class="hero__card hero__card--award">
+          <i class="fas fa-trophy accent"></i>
+          <div>
+            <strong>#1 Gym in NYC</strong>
+            <span>2024 Award</span>
+          </div>
+        </div>
+
+        <!-- Floating card: Live classes -->
+        <div class="hero__card hero__card--live">
+          <span class="hero__live-dot"></span>
+          <span>3 Live Classes Now</span>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Scroll indicator -->
+    <a href="#about" class="hero__scroll-line-cue">
+      <span class="hero__scroll-track"><span class="hero__scroll-thumb"></span></span>
+      <span>Scroll</span>
+    </a>
+
+  </section>
+
+  <!-- =========================================================
+       ABOUT
+  ========================================================= -->
+  <section class="section about" id="about">
+    <div class="container about__grid">
+      <div class="about__media reveal">
+        <div class="about__img-wrap">
+          <img src="spor salonu.jpg" alt="IronForge Gym interior" loading="lazy" />
+          <div class="about__badge">
+            <span class="about__badge-number accent">15</span>
+            <span class="about__badge-text">Years of<br/>Excellence</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="about__copy reveal">
+        <p class="section__eyebrow">Our Story</p>
+        <h2 class="section__title">Built For Those Who <span class="accent">Never Quit</span></h2>
+        <p class="about__lead">
+          IronForge was founded in 2010 with a single mission: give serious athletes and everyday warriors the same tools, community, and coaching that champions rely on.
+        </p>
+        <p class="about__body">
+          From a 2,000 sq ft warehouse to a 20,000 sq ft state-of-the-art facility, we've grown alongside every member who ever walked through our doors. We believe fitness is not a destination — it's a daily decision to become better than you were yesterday.
+        </p>
+
+        <div class="about__pillars">
+          <div class="about__pillar">
+            <i class="fas fa-fire accent"></i>
+            <div>
+              <strong>Relentless Intensity</strong>
+              <p>Every session is designed to push you further than you thought possible.</p>
+            </div>
+          </div>
+          <div class="about__pillar">
+            <i class="fas fa-users accent"></i>
+            <div>
+              <strong>Community First</strong>
+              <p>We're a tribe. You train harder when you know someone has your back.</p>
+            </div>
+          </div>
+          <div class="about__pillar">
+            <i class="fas fa-trophy accent"></i>
+            <div>
+              <strong>Proven Results</strong>
+              <p>Science-backed programming that delivers visible, measurable change.</p>
+            </div>
+          </div>
+        </div>
+
+        <a href="#programs" class="btn btn--primary">Explore Programs</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================
+       PROGRAMS
+  ========================================================= -->
+  <section class="section programs" id="programs">
+    <div class="container">
+      <div class="section__header reveal">
+        <p class="section__eyebrow">What We Offer</p>
+        <h2 class="section__title">Training <span class="accent">Programs</span></h2>
+        <p class="section__desc">Expert-designed programs for every goal — whether you're here to shred, build, compete, or simply move better.</p>
+      </div>
+
+      <div class="programs__grid">
+        <div class="program-card reveal">
+          <div class="program-card__icon"><i class="fas fa-dumbbell"></i></div>
+          <h3 class="program-card__title">Strength Training</h3>
+          <p class="program-card__desc">Progressive overload, compound lifts, and periodization to build raw strength and muscle mass that lasts.</p>
+          <a href="#contact" class="program-card__link">Learn More <i class="fas fa-arrow-right"></i></a>
+        </div>
+        <div class="program-card reveal">
+          <div class="program-card__icon"><i class="fas fa-person-running"></i></div>
+          <h3 class="program-card__title">Cardio & Conditioning</h3>
+          <p class="program-card__desc">HIIT, circuit training, and endurance work to maximize calorie burn and cardiovascular performance.</p>
+          <a href="#contact" class="program-card__link">Learn More <i class="fas fa-arrow-right"></i></a>
+        </div>
+        <div class="program-card reveal">
+          <div class="program-card__icon"><i class="fas fa-user-tie"></i></div>
+          <h3 class="program-card__title">Personal Training</h3>
+          <p class="program-card__desc">One-on-one sessions tailored to your exact body, goals, and schedule. Maximum results in minimum time.</p>
+          <a href="#contact" class="program-card__link">Learn More <i class="fas fa-arrow-right"></i></a>
+        </div>
+        <div class="program-card reveal">
+          <div class="program-card__icon"><i class="fas fa-infinity"></i></div>
+          <h3 class="program-card__title">CrossFit</h3>
+          <p class="program-card__desc">Functional movements performed at high intensity. Build athleticism, agility, and mental toughness simultaneously.</p>
+          <a href="#contact" class="program-card__link">Learn More <i class="fas fa-arrow-right"></i></a>
+        </div>
+        <div class="program-card reveal">
+          <div class="program-card__icon"><i class="fas fa-spa"></i></div>
+          <h3 class="program-card__title">Yoga & Mobility</h3>
+          <p class="program-card__desc">Improve flexibility, posture, and recovery. Our yoga classes complement every other training discipline.</p>
+          <a href="#contact" class="program-card__link">Learn More <i class="fas fa-arrow-right"></i></a>
+        </div>
+        <div class="program-card reveal">
+          <div class="program-card__icon"><i class="fas fa-hand-fist"></i></div>
+          <h3 class="program-card__title">Boxing & MMA</h3>
+          <p class="program-card__desc">Learn striking, footwork, and self-defence from professional fighters. The ultimate full-body challenge.</p>
+          <a href="#contact" class="program-card__link">Learn More <i class="fas fa-arrow-right"></i></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================
+       TRAINERS
+  ========================================================= -->
+  <section class="section trainers" id="trainers">
+    <div class="container">
+      <div class="section__header reveal">
+        <p class="section__eyebrow">The Team</p>
+        <h2 class="section__title">Meet Your <span class="accent">Coaches</span></h2>
+        <p class="section__desc">Our trainers are certified professionals who live and breathe fitness. They don't just teach — they transform.</p>
+      </div>
+
+      <div class="trainers__grid">
+
+        <div class="trainer-card reveal">
+          <div class="trainer-card__img-wrap">
+            <img src="erkek eğitmen.jpg" alt="Marcus Reid" loading="lazy" />
+            <div class="trainer-card__overlay">
+              <div class="trainer-card__socials">
+                <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="trainer-card__body">
+            <h3 class="trainer-card__name">Marcus Reid</h3>
+            <span class="trainer-card__role accent">Head Coach / Strength</span>
+            <p class="trainer-card__bio">Former competitive powerlifter with 12 years of coaching experience. NSCA-CSCS certified. Specialises in strength programming and body recomposition.</p>
+          </div>
+        </div>
+
+        <div class="trainer-card reveal">
+          <div class="trainer-card__img-wrap">
+            <img src="eğitmen kadın.jpg" alt="Sofia Alvarez" loading="lazy" />
+            <div class="trainer-card__overlay">
+              <div class="trainer-card__socials">
+                <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="trainer-card__body">
+            <h3 class="trainer-card__name">Sofia Alvarez</h3>
+            <span class="trainer-card__role accent">CrossFit & Conditioning</span>
+            <p class="trainer-card__bio">CrossFit Level 3 Trainer and two-time regional champion. Builds elite conditioning and mental resilience in her athletes.</p>
+          </div>
+        </div>
+
+        <div class="trainer-card reveal">
+          <div class="trainer-card__img-wrap">
+            <img src="erkek eğitmen 2.jpg" alt="James Okafor" loading="lazy" />
+            <div class="trainer-card__overlay">
+              <div class="trainer-card__socials">
+                <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="trainer-card__body">
+            <h3 class="trainer-card__name">James Okafor</h3>
+            <span class="trainer-card__role accent">Boxing & MMA</span>
+            <p class="trainer-card__bio">Pro MMA record 14-3. Retired to coach the next generation of fighters. Expert in striking, clinch work, and combat conditioning.</p>
+          </div>
+        </div>
+
+        <div class="trainer-card reveal">
+          <div class="trainer-card__img-wrap">
+            <img src="kadın eğitmen 2.jpg" alt="Leena Park" loading="lazy" />
+            <div class="trainer-card__overlay">
+              <div class="trainer-card__socials">
+                <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="trainer-card__body">
+            <h3 class="trainer-card__name">Leena Park</h3>
+            <span class="trainer-card__role accent">Yoga & Mobility</span>
+            <p class="trainer-card__bio">RYT-500 certified yoga instructor and functional movement specialist. Helps athletes unlock performance through recovery and mobility work.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================
+       PRICING
+  ========================================================= -->
+  <section class="section pricing" id="pricing">
+    <div class="container">
+      <div class="section__header reveal">
+        <p class="section__eyebrow">Membership Plans</p>
+        <h2 class="section__title">Simple, Transparent <span class="accent">Pricing</span></h2>
+        <p class="section__desc">No hidden fees. No long-term lock-ins. Pick the plan that fits your goals and start training today.</p>
+      </div>
+
+      <div class="pricing__toggle reveal">
+        <span class="pricing__toggle-label">Monthly</span>
+        <label class="toggle-switch" aria-label="Toggle annual billing">
+          <input type="checkbox" id="billingToggle" />
+          <span class="toggle-switch__slider"></span>
+        </label>
+        <span class="pricing__toggle-label">Annual <span class="pricing__save-badge">Save 20%</span></span>
+      </div>
+
+      <div class="pricing__grid">
+
+        <div class="pricing-card reveal">
+          <div class="pricing-card__header">
+            <h3 class="pricing-card__plan">Basic</h3>
+            <div class="pricing-card__price">
+              <sup>$</sup>
+              <span class="price-amount" data-monthly="39" data-annual="31">39</span>
+              <sub>/mo</sub>
+            </div>
+            <p class="pricing-card__desc">Perfect for self-starters who want access to our world-class facility.</p>
+          </div>
+          <ul class="pricing-card__features">
+            <li><i class="fas fa-check accent"></i> Full Gym Access</li>
+            <li><i class="fas fa-check accent"></i> Locker Room & Showers</li>
+            <li><i class="fas fa-check accent"></i> 2 Group Classes / Month</li>
+            <li><i class="fas fa-check accent"></i> Fitness Assessment</li>
+            <li class="disabled"><i class="fas fa-times"></i> Personal Training Sessions</li>
+            <li class="disabled"><i class="fas fa-times"></i> Nutrition Consultation</li>
+            <li class="disabled"><i class="fas fa-times"></i> Priority Class Booking</li>
+          </ul>
+          <a href="#contact" class="btn btn--outline btn--full">Get Started</a>
+        </div>
+
+        <div class="pricing-card pricing-card--featured reveal">
+          <div class="pricing-card__badge">Most Popular</div>
+          <div class="pricing-card__header">
+            <h3 class="pricing-card__plan">Pro</h3>
+            <div class="pricing-card__price">
+              <sup>$</sup>
+              <span class="price-amount" data-monthly="79" data-annual="63">79</span>
+              <sub>/mo</sub>
+            </div>
+            <p class="pricing-card__desc">The complete package for athletes serious about achieving real results.</p>
+          </div>
+          <ul class="pricing-card__features">
+            <li><i class="fas fa-check accent"></i> Full Gym Access</li>
+            <li><i class="fas fa-check accent"></i> Locker Room & Showers</li>
+            <li><i class="fas fa-check accent"></i> Unlimited Group Classes</li>
+            <li><i class="fas fa-check accent"></i> Fitness Assessment</li>
+            <li><i class="fas fa-check accent"></i> 4 PT Sessions / Month</li>
+            <li><i class="fas fa-check accent"></i> Nutrition Consultation</li>
+            <li class="disabled"><i class="fas fa-times"></i> Priority Class Booking</li>
+          </ul>
+          <a href="#contact" class="btn btn--primary btn--full">Get Started</a>
+        </div>
+
+        <div class="pricing-card reveal">
+          <div class="pricing-card__header">
+            <h3 class="pricing-card__plan">Elite</h3>
+            <div class="pricing-card__price">
+              <sup>$</sup>
+              <span class="price-amount" data-monthly="149" data-annual="119">149</span>
+              <sub>/mo</sub>
+            </div>
+            <p class="pricing-card__desc">The ultimate VIP experience for those who demand the absolute best.</p>
+          </div>
+          <ul class="pricing-card__features">
+            <li><i class="fas fa-check accent"></i> Full Gym Access (24/7)</li>
+            <li><i class="fas fa-check accent"></i> Private Locker</li>
+            <li><i class="fas fa-check accent"></i> Unlimited Group Classes</li>
+            <li><i class="fas fa-check accent"></i> Advanced Body Composition</li>
+            <li><i class="fas fa-check accent"></i> Unlimited PT Sessions</li>
+            <li><i class="fas fa-check accent"></i> Personalised Nutrition Plan</li>
+            <li><i class="fas fa-check accent"></i> Priority Class Booking</li>
+          </ul>
+          <a href="#contact" class="btn btn--outline btn--full">Get Started</a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================
+       CLASS SCHEDULE
+  ========================================================= -->
+  <section class="section schedule" id="schedule">
+    <div class="container">
+      <div class="section__header reveal">
+        <p class="section__eyebrow">Weekly Timetable</p>
+        <h2 class="section__title">Class <span class="accent">Schedule</span></h2>
+        <p class="section__desc">Find a class that fits your week. New sessions added every month.</p>
+      </div>
+
+      <div class="schedule__tabs reveal">
+        <button class="schedule__tab active" data-day="mon">Mon</button>
+        <button class="schedule__tab" data-day="tue">Tue</button>
+        <button class="schedule__tab" data-day="wed">Wed</button>
+        <button class="schedule__tab" data-day="thu">Thu</button>
+        <button class="schedule__tab" data-day="fri">Fri</button>
+        <button class="schedule__tab" data-day="sat">Sat</button>
+        <button class="schedule__tab" data-day="sun">Sun</button>
+      </div>
+
+      <div class="schedule__panels">
+        <!-- Monday -->
+        <div class="schedule__panel active" id="schedule-mon">
+          <div class="schedule-item reveal"><span class="schedule-item__time">06:00 AM</span><div class="schedule-item__info"><strong>Morning HIIT</strong><span>Sofia Alvarez · 45 min · All Levels</span></div><span class="schedule-item__spots">8 spots</span></div>
+          <div class="schedule-item reveal"><span class="schedule-item__time">09:00 AM</span><div class="schedule-item__info"><strong>Strength Fundamentals</strong><span>Marcus Reid · 60 min · Beginner</span></div><span class="schedule-item__spots">12 spots</span></div>
+          <div class="schedule-item reveal"><span class="schedule-item__time">12:00 PM</span><div class="schedule-item__info"><strong>Lunchtime CrossFit</strong><span>Sofia Alvarez · 50 min · Intermediate</span></div><span class="schedule-item__spots">6 spots</span></div>
+          <div class="schedule-item reveal"><span class="schedule-item__time">06:00 PM</span><div class="schedule-item__info"><strong>Power Yoga</strong><span>Leena Park · 60 min · All Levels</span></div><span class="schedule-item__spots">15 spots</span></div>
+          <div class="schedule-item reveal"><span class="schedule-item__time">07:30 PM</span><div class="schedule-item__info"><strong>Boxing Fundamentals</strong><span>James Okafor · 60 min · Beginner</span></div><span class="schedule-item__spots">10 spots</span></div>
+        </div>
+        <!-- Tuesday -->
+        <div class="schedule__panel" id="schedule-tue">
+          <div class="schedule-item reveal"><span class="schedule-item__time">06:30 AM</span><div class="schedule-item__info"><strong>Cardio Blast</strong><span>Sofia Alvarez · 45 min · All Levels</span></div><span class="schedule-item__spots">10 spots</span></div>
+          <div class="schedule-item reveal"><span class="schedule-item__time">10:00 AM</span><div class="schedule-item__info"><strong>Olympic Lifting</strong><span>Marcus Reid · 75 min · Advanced</span></div><span class="schedule-item__spots">8 spots</span></div>
+          <div class="schedule-item reveal"><span class="schedule-item__time">05:30 PM</span><div class="schedule-item__info"><strong>MMA Conditioning</strong><span>James Okafor · 60 min · Intermediate</span></div><span class="schedule-item__spots">12 spots</span></div>
+          <div class="schedule-item reveal"><span class="schedule-item__time">07:00 PM</span><div class="schedule-item__info"><strong>Yin Yoga</strong><span>Leena Park · 60 min · All Levels</span></div><span class="schedule-item__spots">20 spots</span></div>
+        </div>
+        <!-- Wednesday -->
+        <div class="schedule__panel" id="schedule-wed">
+          <div class="schedule-item reveal"><span class="schedule-item__time">06:00 AM</span><div class="schedule-item__info"><strong>Bootcamp</strong><span>Sofia Alvarez · 60 min · All Levels</span></div><span class="schedule-item__spots">15 spots</span></div>
+          <div class="schedule-item reveal"><span class="schedule-item__time">12:00 PM</span><div class="schedule-item__info"><strong>Barbell Club</strong><span>Marcus Reid · 90 min · Intermediate</span></div><span class="schedule-item__spots">10 spots</span></div>
+          <div class="schedule-item reveal"><span class="schedule-item__time">06:00 PM</span><div class="schedule-item__info"><strong>Boxing Sparring</strong><span>James Okafor · 60 min · Advanced</span></div><span class="schedule-item__spots">8 spots</span></div>
+          <div class="schedule-item reveal"><span class="schedule-item__time">07:30 PM</span><div class="schedule-item__info"><strong>Mobility Flow</strong><span>Leena Park · 45 min · All Levels</span></div><span class="schedule-item__spots">25 spots</span></div>
+        </div>
+        <!-- Thursday -->
+        <div class="schedule__panel" id="schedule-thu">
+          <div class="schedule-item reveal"><span class="schedule-item__time">06:30 AM</span><div class="schedule-item__info"><strong>CrossFit WOD</strong><span>Sofia Alvarez · 60 min · Intermediate</span></div><span class="schedule-item__spots">12 spots</span></div>
+          <div class="schedule-item reveal"><span class="schedule-item__time">09:00 AM</span><div class="schedule-item__info"><strong>Strength & Hypertrophy</strong><span>Marcus Reid · 60 min · Intermediate</span></div><span class="schedule-item__spots">10 spots</span></div>
+          <div class="schedule-item reveal"><span class="schedule-item__time">06:00 PM</span><div class="schedule-item__info"><strong>Kickboxing</strong><span>James Okafor · 60 min · All Levels</span></div><span class="schedule-item__spots">15 spots</span></div>
+        </div>
+        <!-- Friday -->
+        <div class="schedule__panel" id="schedule-fri">
+          <div class="schedule-item reveal"><span class="schedule-item__time">06:00 AM</span><div class="schedule-item__info"><strong>Friday Fury HIIT</strong><span>Sofia Alvarez · 45 min · All Levels</span></div><span class="schedule-item__spots">14 spots</span></div>
+          <div class="schedule-item reveal"><span class="schedule-item__time">12:00 PM</span><div class="schedule-item__info"><strong>Powerlifting Clinic</strong><span>Marcus Reid · 90 min · Advanced</span></div><span class="schedule-item__spots">8 spots</span></div>
+          <div class="schedule-item reveal"><span class="schedule-item__time">05:00 PM</span><div class="schedule-item__info"><strong>Restorative Yoga</strong><span>Leena Park · 60 min · All Levels</span></div><span class="schedule-item__spots">20 spots</span></div>
+          <div class="schedule-item reveal"><span class="schedule-item__time">07:00 PM</span><div class="schedule-item__info"><strong>Fight Night Sparring</strong><span>James Okafor · 90 min · Advanced</span></div><span class="schedule-item__spots">6 spots</span></div>
+        </div>
+        <!-- Saturday -->
+        <div class="schedule__panel" id="schedule-sat">
+          <div class="schedule-item reveal"><span class="schedule-item__time">08:00 AM</span><div class="schedule-item__info"><strong>Weekend Warrior CrossFit</strong><span>Sofia Alvarez · 75 min · All Levels</span></div><span class="schedule-item__spots">18 spots</span></div>
+          <div class="schedule-item reveal"><span class="schedule-item__time">10:00 AM</span><div class="schedule-item__info"><strong>Open Barbell Session</strong><span>Marcus Reid · 120 min · All Levels</span></div><span class="schedule-item__spots">20 spots</span></div>
+          <div class="schedule-item reveal"><span class="schedule-item__time">12:00 PM</span><div class="schedule-item__info"><strong>Boxing Masterclass</strong><span>James Okafor · 90 min · Intermediate</span></div><span class="schedule-item__spots">10 spots</span></div>
+        </div>
+        <!-- Sunday -->
+        <div class="schedule__panel" id="schedule-sun">
+          <div class="schedule-item reveal"><span class="schedule-item__time">09:00 AM</span><div class="schedule-item__info"><strong>Sunday Yoga Flow</strong><span>Leena Park · 75 min · All Levels</span></div><span class="schedule-item__spots">25 spots</span></div>
+          <div class="schedule-item reveal"><span class="schedule-item__time">11:00 AM</span><div class="schedule-item__info"><strong>Recovery & Mobility</strong><span>Leena Park · 60 min · All Levels</span></div><span class="schedule-item__spots">30 spots</span></div>
+          <div class="schedule-item reveal"><span class="schedule-item__time">01:00 PM</span><div class="schedule-item__info"><strong>Strength Introduction</strong><span>Marcus Reid · 60 min · Beginner</span></div><span class="schedule-item__spots">15 spots</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================
+       TESTIMONIALS
+  ========================================================= -->
+  <section class="section testimonials" id="testimonials">
+    <div class="container">
+      <div class="section__header reveal">
+        <p class="section__eyebrow">Real Stories</p>
+        <h2 class="section__title">Member <span class="accent">Transformations</span></h2>
+        <p class="section__desc">These aren't just fitness results. These are life-changing moments from real IronForge members.</p>
+      </div>
+
+      <div class="testimonials__grid">
+
+        <div class="testimonial-card reveal">
+          <div class="testimonial-card__transform">
+            <div class="transform-placeholder">
+              <span>Before</span>
+              <img src="before 2.png" alt="Before transformation" loading="lazy" style="object-position: center 0%;" />
+            </div>
+            <div class="transform-arrow"><i class="fas fa-arrow-right accent"></i></div>
+            <div class="transform-placeholder">
+              <span>After</span>
+              <img src="after 2.png" alt="After transformation" loading="lazy" style="object-position: center 0%;" />
+            </div>
+          </div>
+          <div class="testimonial-card__body">
+            <div class="testimonial-card__stars">
+              <i class="fas fa-star accent"></i><i class="fas fa-star accent"></i><i class="fas fa-star accent"></i><i class="fas fa-star accent"></i><i class="fas fa-star accent"></i>
+            </div>
+            <p class="testimonial-card__quote">"I lost 38 lbs in 5 months and built more confidence than I've had in a decade. Marcus and the team didn't just change my body — they changed my mindset."</p>
+            <div class="testimonial-card__author">
+              <img src="https://i.pravatar.cc/60?img=18" alt="Daniel K." loading="lazy" />
+              <div>
+                <strong>Daniel K.</strong>
+                <span>Member since 2022 · Lost 38 lbs</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="testimonial-card reveal">
+          <div class="testimonial-card__transform">
+            <div class="transform-placeholder">
+              <span>Before</span>
+              <img src="before 1.png" alt="Before transformation" loading="lazy" style="object-position: center 5%;" />
+            </div>
+            <div class="transform-arrow"><i class="fas fa-arrow-right accent"></i></div>
+            <div class="transform-placeholder">
+              <span>After</span>
+              <img src="after 1.png" alt="After transformation" loading="lazy" style="object-position: center 5%;" />
+            </div>
+          </div>
+          <div class="testimonial-card__body">
+            <div class="testimonial-card__stars">
+              <i class="fas fa-star accent"></i><i class="fas fa-star accent"></i><i class="fas fa-star accent"></i><i class="fas fa-star accent"></i><i class="fas fa-star accent"></i>
+            </div>
+            <p class="testimonial-card__quote">"Sofia's CrossFit classes are unlike anything I've experienced. I went from barely running a mile to competing in my first half-marathon. IronForge is the real deal."</p>
+            <div class="testimonial-card__author">
+              <img src="https://i.pravatar.cc/60?img=36" alt="Priya S." loading="lazy" />
+              <div>
+                <strong>Priya S.</strong>
+                <span>Member since 2021 · Half-Marathon Finisher</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="testimonial-card reveal">
+          <div class="testimonial-card__transform">
+            <div class="transform-placeholder">
+              <span>Before</span>
+              <img src="before 3.png" alt="Before transformation" loading="lazy" style="object-position: center 0%;" />
+            </div>
+            <div class="transform-arrow"><i class="fas fa-arrow-right accent"></i></div>
+            <div class="transform-placeholder">
+              <span>After</span>
+              <img src="after 3.png" alt="After transformation" loading="lazy" style="object-position: center 0%;" />
+            </div>
+          </div>
+          <div class="testimonial-card__body">
+            <div class="testimonial-card__stars">
+              <i class="fas fa-star accent"></i><i class="fas fa-star accent"></i><i class="fas fa-star accent"></i><i class="fas fa-star accent"></i><i class="fas fa-star-half-alt accent"></i>
+            </div>
+            <p class="testimonial-card__quote">"I joined IronForge at 52, thinking I was too old to see real results. Six months later I'm deadlifting twice my body weight. This place proves age is just a number."</p>
+            <div class="testimonial-card__author">
+              <img src="https://i.pravatar.cc/60?img=59" alt="Robert M." loading="lazy" />
+              <div>
+                <strong>Robert M.</strong>
+                <span>Member since 2023 · Age 52</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================
+       GALLERY
+  ========================================================= -->
+  <section class="section gallery" id="gallery">
+    <div class="container">
+      <div class="section__header reveal">
+        <p class="section__eyebrow">Inside IronForge</p>
+        <h2 class="section__title">The <span class="accent">Gallery</span></h2>
+        <p class="section__desc">A glimpse into our world-class facility, community events, and athlete moments.</p>
+      </div>
+
+      <div class="gallery__grid">
+        <div class="gallery__item gallery__item--wide reveal">
+          <img src="galeri 1.jpg" alt="Gym floor" loading="lazy" style="object-position: center 35%;" />
+          <div class="gallery__item-overlay"><i class="fas fa-expand"></i></div>
+        </div>
+        <div class="gallery__item reveal">
+          <img src="galeri 2.jpg" alt="Weight room" loading="lazy" style="object-position: center 20%;" />
+          <div class="gallery__item-overlay"><i class="fas fa-expand"></i></div>
+        </div>
+        <div class="gallery__item reveal">
+          <img src="galeri 3.jpg" alt="Cardio zone" loading="lazy" style="object-position: center center;" />
+          <div class="gallery__item-overlay"><i class="fas fa-expand"></i></div>
+        </div>
+        <div class="gallery__item reveal">
+          <img src="galeri 4.jpg" alt="CrossFit area" loading="lazy" style="object-position: center 25%;" />
+          <div class="gallery__item-overlay"><i class="fas fa-expand"></i></div>
+        </div>
+        <div class="gallery__item reveal">
+          <img src="galeri 5.webp" alt="Boxing ring" loading="lazy" style="object-position: center center;" />
+          <div class="gallery__item-overlay"><i class="fas fa-expand"></i></div>
+        </div>
+        <div class="gallery__item gallery__item--tall reveal">
+          <img src="galeri 6.jpg" alt="Training session" loading="lazy" style="object-position: center 25%;" />
+          <div class="gallery__item-overlay"><i class="fas fa-expand"></i></div>
+        </div>
+        <div class="gallery__item gallery__item--tall reveal">
+          <img src="galeri 7.jpg" alt="Yoga studio" loading="lazy" style="object-position: center 20%;" />
+          <div class="gallery__item-overlay"><i class="fas fa-expand"></i></div>
+        </div>
+        <div class="gallery__item gallery__item--wide reveal">
+          <img src="galeri 8.jpg" alt="Community event" loading="lazy" style="object-position: center 10%;" />
+          <div class="gallery__item-overlay"><i class="fas fa-expand"></i></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Lightbox -->
+    <div class="lightbox" id="lightbox">
+      <button class="lightbox__close" id="lightboxClose"><i class="fas fa-times"></i></button>
+      <button class="lightbox__prev" id="lightboxPrev"><i class="fas fa-chevron-left"></i></button>
+      <button class="lightbox__next" id="lightboxNext"><i class="fas fa-chevron-right"></i></button>
+      <div class="lightbox__img-wrap">
+        <img src="" alt="Gallery image" id="lightboxImg" />
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================
+       CONTACT
+  ========================================================= -->
+  <section class="section contact" id="contact">
+    <div class="container">
+      <div class="section__header reveal">
+        <p class="section__eyebrow">Get In Touch</p>
+        <h2 class="section__title">Start Your <span class="accent">Journey</span></h2>
+        <p class="section__desc">Ready to forge a better version of yourself? Reach out and our team will get back to you within 24 hours.</p>
+      </div>
+
+      <div class="contact__grid">
+        <div class="contact__info reveal">
+          <div class="contact__info-block">
+            <div class="contact__info-icon"><i class="fas fa-map-marker-alt"></i></div>
+            <div>
+              <strong>Address</strong>
+              <p>14 Iron Street, Forge District<br />New York, NY 10001</p>
+            </div>
+          </div>
+          <div class="contact__info-block">
+            <div class="contact__info-icon"><i class="fas fa-phone"></i></div>
+            <div>
+              <strong>Phone</strong>
+              <p>+1 (212) 555-0147</p>
+            </div>
+          </div>
+          <div class="contact__info-block">
+            <div class="contact__info-icon"><i class="fas fa-envelope"></i></div>
+            <div>
+              <strong>Email</strong>
+              <p>hello@ironforge.gym</p>
+            </div>
+          </div>
+          <div class="contact__info-block">
+            <div class="contact__info-icon"><i class="fas fa-clock"></i></div>
+            <div>
+              <strong>Opening Hours</strong>
+              <p>Mon – Fri: 5:30 AM – 11:00 PM<br />Sat – Sun: 7:00 AM – 9:00 PM</p>
+            </div>
+          </div>
+
+          <div class="contact__map">
+            <div class="map-placeholder">
+              <i class="fas fa-map-marked-alt"></i>
+              <span>Map Placeholder</span>
+              <small>Embed your Google Maps iframe here</small>
+            </div>
+          </div>
+        </div>
+
+        <form class="contact__form reveal" id="contactForm" novalidate>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="firstName">First Name</label>
+              <input type="text" id="firstName" name="firstName" placeholder="John" required />
+            </div>
+            <div class="form-group">
+              <label for="lastName">Last Name</label>
+              <input type="text" id="lastName" name="lastName" placeholder="Doe" required />
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="email">Email Address</label>
+            <input type="email" id="email" name="email" placeholder="john@example.com" required />
+          </div>
+          <div class="form-group">
+            <label for="phone">Phone Number</label>
+            <input type="tel" id="phone" name="phone" placeholder="+1 (555) 000-0000" />
+          </div>
+          <div class="form-group">
+            <label for="interest">I'm Interested In</label>
+            <select id="interest" name="interest">
+              <option value="">Select a program...</option>
+              <option value="strength">Strength Training</option>
+              <option value="cardio">Cardio & Conditioning</option>
+              <option value="personal">Personal Training</option>
+              <option value="crossfit">CrossFit</option>
+              <option value="yoga">Yoga & Mobility</option>
+              <option value="boxing">Boxing & MMA</option>
+              <option value="membership">General Membership</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="4" placeholder="Tell us about your goals..."></textarea>
+          </div>
+          <button type="submit" class="btn btn--primary btn--full">
+            <span>Send Message</span>
+            <i class="fas fa-paper-plane"></i>
+          </button>
+          <div class="form-success" id="formSuccess">
+            <i class="fas fa-check-circle accent"></i>
+            <span>Message sent! We'll be in touch within 24 hours.</span>
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================
+       FOOTER
+  ========================================================= -->
+  <footer class="footer">
+    <div class="container footer__grid">
+      <div class="footer__brand">
+        <a href="#home" class="logo">
+          <span class="logo__icon"><i class="fas fa-dumbbell"></i></span>
+          <span class="logo__text">IRON<span class="accent">FORGE</span></span>
+        </a>
+        <p class="footer__tagline">Forge Your Legend. Train with champions. Live without limits. IronForge is more than a gym — it's a movement.</p>
+        <div class="footer__socials">
+          <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+          <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+          <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+          <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+          <a href="#" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
+        </div>
+      </div>
+
+      <div class="footer__col">
+        <h4 class="footer__col-title">Quick Links</h4>
+        <ul class="footer__links">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About Us</a></li>
+          <li><a href="#programs">Programs</a></li>
+          <li><a href="#trainers">Trainers</a></li>
+          <li><a href="#pricing">Pricing</a></li>
+          <li><a href="#gallery">Gallery</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+
+      <div class="footer__col">
+        <h4 class="footer__col-title">Programs</h4>
+        <ul class="footer__links">
+          <li><a href="#programs">Strength Training</a></li>
+          <li><a href="#programs">Cardio & HIIT</a></li>
+          <li><a href="#programs">Personal Training</a></li>
+          <li><a href="#programs">CrossFit</a></li>
+          <li><a href="#programs">Yoga & Mobility</a></li>
+          <li><a href="#programs">Boxing & MMA</a></li>
+        </ul>
+      </div>
+
+      <div class="footer__col">
+        <h4 class="footer__col-title">Contact</h4>
+        <ul class="footer__contact-list">
+          <li><i class="fas fa-map-marker-alt accent"></i> 14 Iron Street, NY 10001</li>
+          <li><i class="fas fa-phone accent"></i> +1 (212) 555-0147</li>
+          <li><i class="fas fa-envelope accent"></i> hello@ironforge.gym</li>
+          <li><i class="fas fa-clock accent"></i> Mon–Fri: 5:30AM – 11PM</li>
+        </ul>
+        <div class="footer__newsletter">
+          <p>Get fitness tips in your inbox:</p>
+          <form class="footer__newsletter-form" onsubmit="return false;">
+            <input type="email" placeholder="Enter your email" aria-label="Newsletter email" />
+            <button type="submit" class="btn btn--primary" aria-label="Subscribe"><i class="fas fa-arrow-right"></i></button>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer__bottom">
+      <div class="container footer__bottom-inner">
+        <p>&copy; 2026 IronForge Gym. All rights reserved. Designed with passion for athletes.</p>
+        <div class="footer__legal">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Service</a>
+          <a href="#">Cookie Policy</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back to Top -->
+  <button class="back-to-top" id="backToTop" aria-label="Back to top">
+    <i class="fas fa-chevron-up"></i>
+  </button>
+
+  <script src="script.js"></script>
+</body>
+</html>
