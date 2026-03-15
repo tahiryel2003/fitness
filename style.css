@@ -1612,9 +1612,19 @@ input, textarea, select { font-family: inherit; }
 
 .contact__grid {
   display: grid;
-  grid-template-columns: 1fr 1.4fr;
+  grid-template-columns: 1.4fr 1fr;
   gap: var(--space-xl);
   align-items: start;
+}
+
+.contact__right {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-md);
+}
+
+.contact__map {
+  margin-top: 0;
 }
 
 .contact__info-block {
@@ -1651,7 +1661,6 @@ input, textarea, select { font-family: inherit; }
 }
 
 .contact__map {
-  margin-top: var(--space-md);
   border-radius: var(--radius-md);
   overflow: hidden;
   border: 1px solid var(--border);
