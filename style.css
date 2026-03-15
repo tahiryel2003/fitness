@@ -2021,16 +2021,26 @@ input, textarea, select { font-family: inherit; }
   }
 
   /* Hero mobile */
-  .hero__title-xl      { font-size: clamp(3.8rem, 16vw, 5.5rem); }
-  .hero__title-sm      { font-size: clamp(1.8rem, 7vw, 2.5rem); }
-  .hero__title-word-row{ font-size: clamp(1.8rem, 7vw, 2.5rem); }
-  .hero__stats-row     { gap: 0; }
-  .hero__stat          { padding: 0 1rem 0 0; }
-  .hero__stat-sep      { margin: 0 1rem 0 0; }
-  .hero__stat-number   { font-size: 1.8rem; }
-  .hero__stat-suffix   { font-size: 1.3rem; }
+  .hero__title-xl      { font-size: clamp(5rem, 22vw, 7rem); }
+  .hero__title-sm      { font-size: clamp(2.2rem, 9vw, 3rem); }
+  .hero__title-word-row{ font-size: clamp(2.2rem, 9vw, 3rem); }
+  .hero__stats-row     { flex-wrap: nowrap; justify-content: space-between; padding-left: 1.5rem; padding-right: 1.5rem; gap: 0; }
+  .hero__stat          { padding: 0; align-items: center; flex: 1; }
+  .hero__stat-sep      { flex-shrink: 0; margin: 0 0.3rem; }
+  .hero__stat-number   { font-size: 1.4rem; }
+  .hero__stat-suffix   { font-size: 1rem; }
+  .hero__stat-label    { font-size: 0.55rem; white-space: nowrap; }
   .hero__actions       { gap: 1rem; }
   .hero__play-label    { display: none; }
+
+  /* Hero mobile — center all content */
+  .hero__left          { align-items: center; text-align: center; }
+  .hero__badge         { align-self: center; }
+  .hero__title         { align-items: center; }
+  .hero__title-word-row{ justify-content: center; padding-left: 2.5rem; }
+  .hero__desc          { text-align: center; max-width: 100%; }
+  .hero__actions       { justify-content: center; }
+  .hero__stats-row     { justify-content: center; }
 
   .programs__grid { grid-template-columns: 1fr; }
   .trainers__grid { grid-template-columns: 1fr; }
